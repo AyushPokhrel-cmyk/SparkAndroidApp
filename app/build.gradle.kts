@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+
 }
 
 android {
@@ -47,4 +48,5 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
+    implementation("com.hbb20:ccp:2.7.3")
 }

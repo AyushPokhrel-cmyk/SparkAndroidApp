@@ -1,0 +1,96 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF"
+ >
+
+    <!-- Logo and App Name -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp">
+        <!-- You can use an ImageView for logo -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/sparklogo"
+            android:contentDescription="Logo"/>
+    </LinearLayout>
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Phone Number"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Phone Input Section -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <com.hbb20.CountryCodePicker
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+
+
+            >
+        </com.hbb20.CountryCodePicker>
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    android:gravity="center"
+
+
+    android:layout_marginBottom="16dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/outline_compatitive"
+        android:layout_margin="16dp"
+        android:hint="Enter Phone Number"
+        >
+
+    </EditText>
+</LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We'll send you a code by SMS to confirm your phone number."
+        android:textSize="14sp"
+        android:textColor="#828282"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Continue Button -->
+    <Button
+        android:id="@+id/btnNumberForOtp"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:text="Continue"
+        android:textSize="18sp"
+        android:backgroundTint="#FFD023"
+        android:textColor="#222222"
+        android:layout_marginBottom="28dp"
+        android:layout_gravity="center"/>
+</LinearLayout>

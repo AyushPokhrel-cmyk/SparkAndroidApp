@@ -103,7 +103,7 @@
                     android:background="#FFF8E1">
 
                     <LinearLayout
-                        android:id="@+id/Navodaya"
+                        android:id="@+id/NavodayaBtn"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="#FFF8E1"
